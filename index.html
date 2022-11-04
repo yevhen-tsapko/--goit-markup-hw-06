@@ -413,7 +413,7 @@
 <form class="subcribe-form">
 <label class="subscribe-label">
   
-  <input class="email-input" type="email" name="email" placeholder="E-mail">
+  <input class="email-input" type="email" name="user-email" placeholder="E-mail">
 </label>
 <button class="subscribe-button" type="submit">
 
@@ -427,6 +427,7 @@
 
       </div>
     </footer>
+    <!-- Modal window -->
        <div data-modal class="backdrop is-hidden" >
           <div class="modal">
 <button class="close-button" data-modal-close type="button">
@@ -434,18 +435,52 @@
     <use href="./img/symbol-defs.svg#close"></use>
   </svg>
 </button>
+
 <p class="modal-text">
   Залиште свої дані, ми вам передзвонимо
 </p>
 <form class="modal-form" >
- <div class="modal-item">
   <label class="modal-label" for="user-name">Ім'я</label>
-  <input class="modal-input" type="text" name="user-name">
-  <svg class="modal-icon">
+ <div class="modal-item">
+  <svg class="modal-icon" >
     <use href="./img/symbol-defs.svg#person"></use>
   </svg>
+  <input class="modal-input" type="text" name="user-name" id="user-name">
+ </div>
+ 
+ <label class="modal-label" for="user-tel">Телефон</label>
+ <div class="modal-item">
+  <svg class="modal-icon" >
+    <use href="./img/symbol-defs.svg#phone"></use>
+  </svg>
+  <input class="modal-input" type="tel" name="user-tel" id="user-tel">
  </div>
 
+ <label class="modal-label" for="user-email">Пошта</label>
+ <div class="modal-item">
+  <svg class="modal-icon" >
+    <use href="./img/symbol-defs.svg#email"></use>
+  </svg>
+  <input class="modal-input" type="email" id="user-email" name="user-email">
+ </div>
+
+ <label class="modal-label" for="user-coment">Коментар</label>
+          <textarea class="textarea"  id="user-coment" name="user-coment"  placeholder="Введіть текст"></textarea>
+    
+   <label class="check">
+    <input class="check-input visually-hidden" type="checkbox" name="agreement" >
+     <div class="check-box">
+      <svg class="check-icon" width="16" height="15">
+        <use href="./img/symbol-defs.svg#check-off"></use>
+      </svg>
+     </div>
+          Погоджуюся з розсилкою та приймаю 
+      </label>
+      <a class="order-condition" href="">Умови договору</a>
+   
+   <div class="button-wrap">
+    <button class="submit-button">Відправити</button>
+   </div>
 </form>
           </div>
         </div>
