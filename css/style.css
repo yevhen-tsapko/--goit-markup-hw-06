@@ -241,12 +241,12 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) ;
-  min-width: 528px;
-min-height: 581px;
+  width: 528px;
+height: 581px;
 background: #FFFFFF;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
-padding: 40px 39px 40px 39px;
+padding: 40px ;
 }
 .close-button {
   transition: fill var(--transition);
@@ -286,7 +286,7 @@ color: var(--title-text-color);
 .modal-label {
   display:inline-block;
  font-size: 12px;
-line-height: 1.17px;
+line-height: 1.17;
 letter-spacing: 0.01em;
 color: var(--text-color);
 }
@@ -305,13 +305,13 @@ transition: border-color var(--transition);
 
 
 .modal-icon {
-  transition: fill var(--transition);
-  position: absolute;
+   position: absolute;
   top: 50%;
+  left: 12px;
   width: 18px;
   height: 18px;
-  transform: translate(12px, -50%);
-  
+  transform: translateY(-50%);
+  transition: fill var(--transition);
 }
 .modal-item:focus-within .modal-icon {
   fill: var(--focus-color);
@@ -324,6 +324,7 @@ transition: border-color var(--transition);
   margin-top: 4px;
   margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   resize: none;
   outline: none;
   transition: border-color var(--transition);
@@ -344,7 +345,7 @@ color: rgba(117, 117, 117, 0.5);
   display:inline-block;
  margin-left:31px;
  padding-left: 20px;
-  margin-bottom: 30px;
+  
 
    line-height: 1.71;
 color: var(--text-color);
@@ -382,16 +383,16 @@ color: var(--text-color);
   background-size: cover;
   background-repeat: no-repeat;
  }
-.button-wrap {
-  text-align: center;
-}
 
-.submit-button {
+.submit-button {display: block;
+  margin: 30px auto 0;
   transition: background-color var(--transition);
   padding: 10px 52px;
   background: var(--focus-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
+font-weight: 700;
+font-size: 16px;
+line-height: 1.9;
 letter-spacing: 0.06em;
 
 color: #FFFFFF;
@@ -646,7 +647,7 @@ display: flex;
 align-items: center;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
-
+outline: none;
 }
 
 .subscribe-button {
