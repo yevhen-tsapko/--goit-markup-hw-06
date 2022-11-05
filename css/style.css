@@ -249,7 +249,7 @@ border-radius: 4px;
 padding: 40px ;
 }
 .close-button {
-  transition: fill var(--transition);
+  
   position: absolute;
   top: 6px;
   right: 6px;
@@ -265,7 +265,8 @@ padding: 40px ;
 
   padding: 0;
 }
-
+.close-icon {transition: fill var(--transition);
+  }
 .close-button:hover .close-icon {
   fill: var(--focus-color);
 }
